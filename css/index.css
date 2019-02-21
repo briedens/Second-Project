@@ -1,0 +1,451 @@
+* {
+   padding: 0;
+   margin: 0;
+   
+}
+
+
+
+
+/*** Navigation Start ********************/
+
+
+#navigation {
+  position: fixed;
+  width: 100%;
+  top: 45%;
+  z-index: 100;
+}
+
+#navigation ul {
+  position: absolute;
+  right: 3vw;
+  float: right;
+  top: 45%;
+  direction: rtl;
+}
+
+
+
+#navigation ul li {
+ position: relative;
+ text-decoration: none;
+  list-style: none;
+  background-color: rgb(117, 36, 36);
+  width: 10px;
+  height: 10px;
+  line-height: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+
+
+#navigation ul li:hover {
+ background-color: none;
+ width: calc(100% + 20px);
+ height: 20px;
+ 
+ overflow: hidden;
+}
+
+
+#navigation ul .text {
+ background-color: none;
+ position: relative;
+ left: 50px;
+ width: 100%;
+ height: 20px;
+ z-index: 2;
+}
+
+/*** Navigation Ending ********************/
+
+
+/*** Main Start ********************/
+
+#main {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(17, 17, 17);
+   background-image: url(/img/index.jpg);
+   background-size: cover;
+   color: rgb(209, 209, 209);
+}
+
+#main .layer {
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(0, 0, 0, 0.6);
+   
+}
+
+#main .title {
+   position: absolute;
+   left: 40%;
+   top: 30%;  
+}
+
+#main .title h1{
+   font-size: 50px;
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 10px;
+}
+
+#main .title .im {
+   margin-left: 10%;
+}
+
+#main .title .madmeow {
+   margin-left: 20%;
+}
+
+
+
+#main .side_img {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+#main .side_img img{
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 110vh;
+   width: 40vw;
+   object-fit: cover;
+   clip-path: polygon(19% 23%, 100% 0, 100% 100%, 19% calc(100% - 10vh));
+}
+
+/*** Main Ending ********************/
+
+
+
+/*** About Start ********************/
+
+#about {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(7, 7, 7);
+   color: rgb(100, 100, 100); 
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 10px;
+   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vh), 0 100%);
+}
+
+#about .title {
+   padding-top: 70px;
+   padding-bottom: 50px;
+}
+
+#about .title h2{
+   color: rgb(131, 131, 131); 
+}
+
+#about .title h4 {
+   font-size: 12px;
+}
+
+#about .wrap {
+   position: relative;
+   height: 700px;
+
+}
+
+#about .wrap .side_img {
+   position: absolute;
+   left: 5%;
+   height: 60%;
+   width: 40%;
+}
+
+
+#about .wrap .side_img .img{
+   width: 100%;
+   height: 100%;
+   background-image: url("/img/about.jpg");
+   background-size: cover;
+   background-position: center calc(100% + 500px);
+}
+
+#about .wrap .text{
+   height: 40%;
+   width: 50%;
+   object-fit: cover;
+   position: absolute;
+   left: 35%;
+   padding-top: 30px;
+   
+}
+
+#about .wrap .text p{
+   background-color: rgb(7, 7, 7,0.8);
+   /* color: #E9E9E9; */
+   padding: 10px;
+}
+
+
+/*** About Ending ********************/
+
+
+/*** Work Start ********************/
+
+#work {
+   margin-top: -10vh;
+   padding-top: 10vh;
+   height: 100%;
+   color: black;
+   background-color: rgb(43, 43, 43);
+   padding-bottom: 50px;
+   font-family: 'Eczar', serif;
+}
+
+#work .title {
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 10px;
+   font-weight: 600;
+   padding-top: 50px;
+   color: red;
+}
+
+#work .title  h3 {
+  color: rgb(228, 97, 97);
+  font-size: 1.5em;
+}
+
+#work .grid {
+   padding: 20px 50px;
+}
+
+#work .grid .row{
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-auto-rows: 300px;
+   margin: 0;
+   /*background-color: white;*/
+   
+}
+
+#work .grid .row .cell {
+   padding: 2px;
+}
+
+#work .grid .row img {
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+
+}
+
+
+
+/*** Work Ending ***/
+
+
+/*** Art Start ********************/
+
+#art {
+  /*background-color: rgb(46, 45, 45);*/
+   background-color: rgb(18, 17, 17);
+   height: 100%;
+   padding-bottom: 200px;
+   font-family: 'Eczar', serif;
+}
+
+#art .title {
+   text-transform: uppercase;
+   text-align: center;
+   letter-spacing: 10px;
+   font-weight: 600;
+   padding-top: 50px;
+   color: coral;
+}
+
+
+#art .slider {
+   position: relative;
+   margin: 50px 15%;
+}
+
+#art .slider .slider_title {
+   text-align: center;
+   
+   color: rgb(167, 167, 167);
+   
+}
+
+#art .slider .slider_controls {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+#art .slider .slider_controls .previous {
+   position: absolute;
+   cursor: pointer;
+   top: 45%;
+   left: -4vw;
+   border: none;
+}
+
+#art .slider .slider_controls .next {
+   position: absolute;
+   cursor: pointer;
+   top: 45%;
+   right: -2vw;
+   border: none;
+}
+
+#art .slider .slider_controls .previous:before {
+   position: absolute;
+   top: -11px;
+   content: "";
+   width: 5px;
+   height: 20px;
+   background-color: rgb(97, 96, 96);
+   transform: rotate(45deg);
+}
+#art .slider .slider_controls .previous:after {
+   position: absolute;
+   content: "";
+   width: 5px;
+   height: 20px;
+   background-color: rgb(97, 96, 96);
+   transform: rotate(-45deg);
+}
+
+#art .slider .slider_controls .next:before {
+   position: absolute;
+   top: -11px;
+   content: "";
+   width: 5px;
+   height: 20px;
+   background-color: rgb(97, 96, 96);
+   transform: rotate(-45deg);
+}
+#art .slider .slider_controls .next:after {
+   position: absolute;
+   content: "";
+   width: 5px;
+   height: 20px;
+   background-color: rgb(97, 96, 96);
+   transform: rotate(45deg);
+}
+
+
+#art .slider  .wraper{
+   overflow: hidden;
+   /*background-color: black;*/
+}
+
+#art .slider .slider_list {
+  position: relative;
+   margin: 0;
+   display: grid;
+   grid-template-columns: repeat(15, calc(100% / 3));
+   transition: 500ms;
+   z-index: 10;
+}
+
+#art .slider .slider_list .one {
+   background-color: violet;
+}
+
+
+#art .slider .slider_list .slider_img {
+   text-decoration: none;
+   list-style: none;
+   height: 400px;
+   margin: 20px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+#art .slider .slider_list .slider_img img {
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+}
+
+
+/* Slider PopUp */
+
+
+#art .slider.popUpSlider {
+   position: fixed;
+   top: 0;
+   z-index: 20;
+   margin: 0;
+   margin: 0 15%;
+}
+
+
+
+#art .slider.popUpSlider .slider_list {
+  grid-template-columns: repeat(15, calc(100% / 1));
+}
+
+
+
+#art .slider.popUpSlider .slider_list .slider_img {
+  height: 100%;
+  margin: 0;
+}
+
+#art .slider.popUpSlider .slider_list .slider_img img {
+  height: 80vh;
+  object-fit: contain;
+  margin: 10vh 0 ;
+}
+
+
+
+/*** Art Ending ***/
+
+
+
+
+
+
+
+/*** Footer Start ********************/
+
+#instafeed {
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   background-color: white;
+}
+
+#instafeed .instaimg {
+   width: 100%;
+   height: 100%;
+}
+
+/*** Art Ending ***/
+
+
+
+
+
+
+/*** Footer Start ********************/
+
+#footer {
+   height: 100px;
+   color: white;
+   background-color: rgb(7, 7, 7);
+}
+
+#footer p {
+   text-align: center;
+   letter-spacing: 1px;
+   padding-top: 50px;
+}
+
+/*** Footer Ending ********************/
